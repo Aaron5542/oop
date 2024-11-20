@@ -1,0 +1,17 @@
+class OtherHealthProfessional extends HealthProfessional {
+    private String additionalInfo;
+
+    public OtherHealthProfessional() {
+    }
+
+    public OtherHealthProfessional(int id, String name, String basicInfo, String additionalInfo) {
+        super(id, name, basicInfo);
+        this.additionalInfo = additionalInfo;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Additional Info: " + additionalInfo);
+    }
+}

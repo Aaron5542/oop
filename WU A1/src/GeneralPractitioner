@@ -1,0 +1,17 @@
+class GeneralPractitioner extends HealthProfessional {
+    private String specialization;
+
+    public GeneralPractitioner() {
+    }
+
+    public GeneralPractitioner(int id, String name, String basicInfo, String specialization) {
+        super(id, name, basicInfo);
+        this.specialization = specialization;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Specialization: " + specialization);
+    }
+}

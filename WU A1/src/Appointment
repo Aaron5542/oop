@@ -1,0 +1,25 @@
+class Appointment {
+    private String patientName;
+    private String patientPhone;
+    private String preferredTime;
+    private HealthProfessional healthProfessional;
+
+    public Appointment() {
+    }
+
+    public Appointment(String patientName, String patientPhone, String preferredTime, HealthProfessional healthProfessional) {
+        this.patientName = patientName;
+        this.patientPhone = patientPhone;
+        this.preferredTime = preferredTime;
+        this.healthProfessional = healthProfessional;
+    }
+
+    public void printDetails() {
+        System.out.println("Appointment Details:");
+        System.out.println("Patient Name: " + patientName);
+        System.out.println("Patient Phone: " + patientPhone);
+        System.out.println("Preferred Time: " + preferredTime);
+        System.out.println("Health Professional: " + healthProfessional.getClass().getSimpleName());
+        healthProfessional.printDetails();
+    }
+}
